@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+	<script type="text/javascript" src="./ex.js" defer></script>
+	<title>InterActive Rating Component</title>
+</head>
+<body>
+	<main role="main"> 
+		<div class="container">
+			<span class="star"><img src="images/icon-star.svg" alt="star icon" id="starico"></span>
+			<h1 class="hd">How did we do?</h1>
+			<p class="para">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+			<div class="btnContainer">
+				<input type="button" name="rating" value="1" id="btn1">
+				<input type="button" name="rating" value="2" id="btn2">
+				<input type="button" name="rating" value="3" id="btn3">
+				<input type="button" name="rating" value="4" id="btn4">
+				<input type="button" name="rating" value="5" id="btn5">
+			</div>
+			<button type="submit" id="subbtn">SUBMIT</button>
+			<div class="container" id="cC">
+				<div class="timg">
+					<img src="images/illustration-thank-you.svg" alt="thanks" id="thimg">
+				</div>
+				<p class="ratingPara">
+					You selected <span id="variable"></span> out of 5
+				</p>
+				<h1 class="thankshd">Thank you!</h1>
+				<p class="thpara">
+					We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+				</p>
+			</div>
+		</div> 
+	</main>
+</body>
+</html>

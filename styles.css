@@ -1,0 +1,122 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	transition: all 0.3s;
+}
+body {
+	background: #131519;
+}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 20px;
+	background: #212932;
+	border-radius: 15px;
+}
+.timg {
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+.ratingPara {
+	border-radius: 20px;
+	text-align: center;
+	padding: 5px;
+	width: 75%;
+	margin: 10px auto;
+	color: #F97711;
+	background: rgba(200, 200, 200, 0.1);
+	text-shadow: 1px 1px 2px black;
+}
+.thankshd {
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	margin: 10px 0;
+	text-shadow: 1px 1px 3px black;
+}
+.thpara {
+	text-align: center;
+	line-height: 18px;
+	color: rgba(250, 250, 250, 0.6);
+	text-shadow: 1px 1px 1px black;
+}
+.hd {
+	margin: 20px 0;
+	color: white;
+	font-weight: lighter;
+	text-shadow: 1px 1px 2px black;
+}
+.para {
+	margin: 20px 0;
+	text-align: justify;
+	color: rgba(250, 250, 250, 0.6);
+	text-shadow: 1px 1px 1px black;
+}
+.star {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	border-radius: 50%;
+	padding: 15px;
+	background: rgba(200, 200, 200, 0.15);
+}
+.btnContainer {
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+#subbtn {
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	border: none;
+	background: #F97711;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 2px black;
+	cursor: pointer;
+}
+#subbtn:hover {
+	background: white;
+	color: #F97711;
+}
+#btn1, #btn2, #btn3, #btn4, #btn5 {
+	border: none;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: rgba(200, 200, 200, 0.15);
+	color: gray;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px black;
+	cursor: pointer;
+}
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover {
+	background: #F97711 !important;
+	color: white;
+}
+#cC {
+	display: none;
+}
+@media screen and (max-width: 500px) {
+	.container {
+		width: 85%;
+	}
+	.btnContainer {
+		gap: 10px;
+	}
+	#cC {
+		width: 100%;
+	}
+}
