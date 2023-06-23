@@ -4,8 +4,7 @@
 }
 * {
 	box-sizing: border-box;
-	font-family: sans-serif;
-	transition: all 0.3s;
+	font-family: sans-serif; 
 }
 body {
 	background: #131519;
@@ -86,10 +85,12 @@ body {
 	letter-spacing: 2px;
 	text-shadow: 1px 1px 2px black;
 	cursor: pointer;
+	transition: all 0.3s;
 }
 #subbtn:hover {
 	background: white;
 	color: #F97711;
+	transition: all 0.3s;
 }
 #btn1, #btn2, #btn3, #btn4, #btn5 {
 	border: none;
@@ -101,10 +102,18 @@ body {
 	font-weight: bold;
 	text-shadow: 1px 1px 2px black;
 	cursor: pointer;
+	transition: all 0.5s;
+}
+#btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus, #btn5:focus {
+	background: gray;
+	color: white;
+	transition: all 0.5s;
 }
 #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover {
-	background: #F97711 !important;
+	background: #F97711;
 	color: white;
+	rotate: 360deg;
+	transition: all 0.5s;
 }
 #cC {
 	display: none;
